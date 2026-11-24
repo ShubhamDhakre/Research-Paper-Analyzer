@@ -1,0 +1,17 @@
+# Core FastAPI microservice framework
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.1
+pydantic>=2.7.4
+pydantic-settings>=2.3.4
+python-dotenv>=1.0.1
+python-multipart>=0.0.9
+requests>=2.32.3
+
+# PDF & Text Processing (Phases 5+)
+PyMuPDF>=1.24.5
+
+# AI / LLM Providers (Phase 6+)
+google-generativeai>=0.7.0
+
+# Vector Database & Embeddings (Phases 7+)
+chromadb>=0.5.0

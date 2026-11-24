@@ -1,0 +1,26 @@
+{
+  "name": "research-paper-analyzer",
+  "version": "1.0.0",
+  "description": "AI Research Paper Analyzer & Research Assistant - Root Workspace Orchestrator",
+  "private": true,
+  "scripts": {
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:python": "cd python-service && ./venv/bin/uvicorn main:app --host 0.0.0.0 --port 8000 --reload",
+    "test:backend": "cd backend && npm test",
+    "test:python": "./python-service/venv/bin/python python-service/test_phase5_pdf.py && ./python-service/venv/bin/python python-service/test_phase6_analysis.py && ./python-service/venv/bin/python python-service/test_phase7_rag.py && ./python-service/venv/bin/python python-service/test_phase8_comparison.py && ./python-service/venv/bin/python python-service/test_phase9_gaps.py && ./python-service/venv/bin/python python-service/test_phase10_literature.py && ./python-service/venv/bin/python python-service/test_phase11_citations.py",
+    "test": "npm run test:python && npm run test:backend",
+    "build:frontend": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "ai",
+    "research-paper-analyzer",
+    "rag",
+    "chromadb",
+    "fastapi",
+    "react",
+    "express"
+  ],
+  "author": "",
+  "license": "ISC"
+}
