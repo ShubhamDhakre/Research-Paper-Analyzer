@@ -47,6 +47,10 @@ data/uploads/*
 !data/uploads/.gitkeep
 data/chroma/*
 !data/chroma/.gitkeep
+python-service/data/chroma/*
+!python-service/data/chroma/.gitkeep
+*.sqlite3
+*.bin
 
 # Logs and temporary files
 logs/
